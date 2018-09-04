@@ -8,23 +8,23 @@ console.log(Math.max(2,4,4.5,3.6));
 console.log(Math.min(21,14,1.5));
 //The maths.min/max function
 
-/*let YourNumber = Number(prompt("enter a number btwn 1 and 15"));
+let YourNumber = Number(prompt("enter a number btwn 1 and 15"));
 console.log("The answer is " + YourNumber * YourNumber);
-The function Number converts the value to a number*/
+/*The function Number converts the value to a number*/
 
-/*var name = "steve wachira";
+var name = "steve wachira";
 const greeting = "hello ";
-console.log(greeting + name);*/
+console.log(greeting + name);
 
 //There is only one value in JavaScript that is not equal to itself, and that is
 //NaN (“not a number”).*/
 //console.log(NaN == NaN);
 
-/*let YourNumber = Number(prompt("enter a number btwn 1 and 15"));
+let YourNumber = Number(prompt("enter a number btwn 1 and 15"));
 if(!Number.isNaN(YourNumber)) {
 console.log("The answer is " + YourNumber * YourNumber);
 }
-The Number.isNaN function is a standard JavaScript function that returns
+/*The Number.isNaN function is a standard JavaScript function that returns
 true only if the argument it is given is NaN . The Number function happens to
 return NaN when you give it a string that doesn’t represent a valid number.*/
 
@@ -178,3 +178,126 @@ var b = foo(4);
 console.log(a);
 console.log(b);
 
+function greet(who, again) {
+        console.log("hello Mr." +  who  +  again);
+}
+greet("Steve", " Ryan");
+
+//finding perimeter of a circle
+var d=21;
+var PI=3.1425;
+function perimeter(){
+	perimeter=d*PI;
+}
+perimeter()
+console.log("The perimeter of the circle is "+ perimeter + " cm" );
+
+//version 2 of above code
+var d=21;
+var PI=3.1425;
+function perimeter(){
+	perimeter=d*PI;
+	perimeter=perimeter*perimeter;
+}
+perimeter();
+console.log("The perimeter of the circle is "+ perimeter + " cm" );
+//explain how this code works??
+
+
+function room(no ,town){
+	console.log("I used to live at " + town + " house no "+ no);
+
+
+//I like this dudes!!!
+function power(base, exponent = 2){
+ 	result = 1;
+for(let count = 0; count < exponent; count++){
+result *= base;
+}
+return result;
+}
+console.log(power(2,6));
+/*If you write an = operator after a parameter, followed by an expression, the
+value of that expression will replace the argument when it is not given.
+For example, this version of power makes its second argument optional. If
+you don’t provide it or pass the value undefined , it will default to two, and the
+function will behave like square .*/
+}
+room("6542","Bahati");
+//a run into the program call the room, which jumps to line 2 "console.log and returns it at function room at line 4.
+
+
+function number(){
+for(number = 1; number <= 100; number++){
+		if(number % 3 == 0 && number % 5 == 0){
+			console.log(number+" bravoh!!");
+        }else if(number % 3 == 0){
+			console.log(number+" excellent");
+        }else if(number % 5 == 0){
+			console.log(number+" awesome!!");
+        }
+		else{
+			console.log(number);
+        }
+}
+    
+}
+number();
+
+//I like this a modified version of a for loop, I had done previously.
+
+
+//another example doing a different stuff.
+function number(){
+for(number = 100; number >= 1; number-=2){
+		if(number % 3 == 0 && number % 5 == 0){
+			console.log(number+" bravoh!!");
+        }else if(number % 3 == 0){
+			console.log(number+" excellent");
+        }else if(number % 5 == 0){
+			console.log(number+" awesome!!");
+        }
+		else{
+			console.log(number);
+        }
+}
+}
+number();
+
+//am in love with js
+//Another weird but cool example for beginner
+function isEven(number){
+	if(number == 0){
+	console.log("even");
+}else if(number == 1){
+	console.log("odd");
+}else{
+	console.log("invalid option")
+}
+}
+isEven(1);
+
+//Be calm am going to do something cool on that code soon.
+//hoping you will enjoy what I will do.
+
+
+//CHAPTER----> DATA STRUCTURES
+var okey = [20,5,41,7,87,7,15.2];
+console.log(okey);
+console.log(okey[2+4]);
+console.log(okey.length);
+console.log(okey["length"]);
+//what console.log(okey)---->does is to list all elements of an array
+//what console.log(okey[2+4])---->does is move, 4 steps forward from the 2nd index of the array.
+//The 2 last parts of the code can have same functionality,but we prefer the second last.when handling property names.
+
+
+<!----Methods--->
+//Both string and array objects contain, in addition to the length property, a number of properties that hold function values.
+//okey.length shows number of elements on an array.
+
+
+function jina(first, last){
+	console.log("Am called "+first+last);
+}
+jina("steve", " ryan");
