@@ -217,14 +217,14 @@ result *= base;
 return result;
 }
 console.log(power(2,6));
-/*If you write an = operator after a parameter, followed by an expression, the
-value of that expression will replace the argument when it is not given.
-For example, this version of power makes its second argument optional. If
-you don’t provide it or pass the value undefined , it will default to two, and the
-function will behave like square .*/
+	/*If you write an = operator after a parameter, followed by an expression, the
+	value of that expression will replace the argument when it is not given.
+	For example, this version of power makes its second argument optional. If
+	you don’t provide it or pass the value undefined , it will default to two, and the
+	function will behave like square .*/
 }
 room("6542","Bahati");
-//a run into the program call the room, which jumps to line 2 "console.log and returns it at function room at line 4.
+	//a run into the program call the room, which jumps to line 2 "console.log and returns it at function room at line 4.
 
 
 function number(){
@@ -244,10 +244,10 @@ for(number = 1; number <= 100; number++){
 }
 number();
 
-//I like this a modified version of a for loop, I had done previously.
+	//I like this a modified version of a for loop, I had done previously.
 
 
-//another example doing a different stuff.
+	//another example doing a different stuff.
 function number(){
 for(number = 100; number >= 1; number-=2){
 		if(number % 3 == 0 && number % 5 == 0){
@@ -264,8 +264,8 @@ for(number = 100; number >= 1; number-=2){
 }
 number();
 
-//am in love with js
-//Another weird but cool example for beginner
+	//am in love with js
+	//Another weird but cool example for beginner
 function isEven(number){
 	if(number == 0){
 	console.log("even");
@@ -277,27 +277,118 @@ function isEven(number){
 }
 isEven(1);
 
-//Be calm am going to do something cool on that code soon.
-//hoping you will enjoy what I will do.
+	//Be calm am going to do something cool on that code soon.
+	//hoping you will enjoy what I will do.
 
 
-//CHAPTER----> DATA STRUCTURES
+	//DATA STRUCTURES
 var okey = [20,5,41,7,87,7,15.2];
 console.log(okey);
 console.log(okey[2+4]);
 console.log(okey.length);
 console.log(okey["length"]);
-//what console.log(okey)---->does is to list all elements of an array
-//what console.log(okey[2+4])---->does is move, 4 steps forward from the 2nd index of the array.
-//The 2 last parts of the code can have same functionality,but we prefer the second last.when handling property names.
+	//what console.log(okey)---->does is to list all elements of an array
+	//what console.log(okey[2+4])---->does is move, 4 steps forward from the 2nd index of the array.
+	//The 2 last parts of the code can have same functionality,but we prefer the second last.when handling property names.
 
 
 <!----Methods--->
-//Both string and array objects contain, in addition to the length property, a number of properties that hold function values.
-//okey.length shows number of elements on an array.
+	//Both string and array objects contain, in addition to the length property, a number of properties that hold function values.
+	//okey.length shows number of elements on an array.
 
 
 function jina(first, last){
 	console.log("Am called "+first+last);
 }
 jina("steve", " ryan");
+	//example 2//
+let jina = "Steve"
+console.log(jina.toUpperCase());
+console.log(jina.toLowerCase());
+console.log(typeof jina.toUpperCase());//this will bring the type of 						the jina, that is a string 
+console.log(typeof jina.toUpperCase);//type of function.
+
+	//Every string has a toUpperCase property. When called, it will return a copy of the string in which all letters have been converted to uppercase. There is also toLowerCase , going the other way.
+
+		//methods to manipulate arrays.
+let number = [1,2,3,4,5];
+number.push(5);
+console.log(number);
+console.log(number.pop());
+
+	//The push method adds values to the end of an array, and the pop methoddoes the opposite, removing the last value in the array and returning it.
+
+                   //OBJECTS
+//Values of the type object are arbitrary collections of properties. One way tocreate an object is by using braces as an expression.
+
+let steve = {
+	work: "with diplomat inc group",
+	"position" : "web developer & designer"
+};
+console.log(steve.position);
+console.log(steve.work);
+
+			//Example_2
+let anObject = {left:1,centre:3, right:2};
+console.log(anObject.centre);
+
+
+		//Braces are used in two ways in javascript
+	//@ the begining of a statement
+			// #eg 
+if(a<=20){
+  console.log("This is twenty");//This is the statement
+}
+			// #eg2
+	//Describe an object
+let anObject = {left:1,centre:3, right:2};
+	console.log(anObject.centre);
+
+	//It is possible to assign a value to a property expression with the = operator.This will replace the property’s value if it already  		existed or create a new property on the object if it didn’t.
+
+
+ Object.keys //Is a function used to check properties an object has.
+
+
+    ???/*let number = {
+	x:1, y:5, z:12
+        };
+   console.log(Object.keys(number));*/
+
+ Object.assign //Is a function used to copy properties from one object  		to another.
+	//#example 1
+let objectA = {a: 1, b: 2};
+Object.assign(objectA, {b: 3, c: 4});
+console.log(objectA);
+// → {a: 1, b: 3, c: 4}
+
+//Arrays, then, are just a kind of object specialized for storing sequences of things. If you evaluate typeof [] , it produces "object"
+
+//EXAMPLE
+	let journal = [
+{events: ["work", "touched tree", "pizza",
+"running", "television"],
+squirrel: false},
+{events: ["work", "ice cream", "cauliflower",
+"lasagna", "touched tree", "brushed teeth"],
+squirrel: false},
+{events: ["weekend", "cycling", "break", "peanuts",
+"beer"],
+squirrel: true},
+/* and so on... */
+];
+
+
+
+			//The delete operator is used to remove value and property on an object.
+let anObject = {left:1,centre:3, right:2};
+delete anObject.centre;
+console.log(anObject.centre);
+
+	//#example 3
+let anObject = {left:1,centre:3, right:2};
+delete anObject.centre;
+console.log("centre" in anObject);
+	//--> the output is "false" since we deleted object with property centre.
+
+
